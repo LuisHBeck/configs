@@ -8,6 +8,8 @@
 
 `Choose your file.zip`
 
+![Download here](https://github.com/LuisHBeck/configs/blob/master/intellij/archives/settings.zip)
+
 `Select the components you want (all)`
 
 ![select the components](archives/selectComponents.png)
@@ -21,6 +23,7 @@
 ![update plugins](archives/update.png)
 
 `Select the plugins you want (all)`
+
 ![select plugins to update](archives/selectUpdate.png)
 
 Restart your IDE and you are ready to code!!!
