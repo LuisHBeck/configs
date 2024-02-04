@@ -39,6 +39,8 @@ Distro with CNTLM
 wsl --import UbuntuCNTLM . <archive.tar>
 ```
 
+<br>
+
 ## DOCKER INSTALATION
 Run the following commands in Ubuntu terminal
 
@@ -74,4 +76,29 @@ Docker compose
 
 Restart your PC
 
-Finished, now just enjoy!!
+
+<br>
+
+## Set Docker aliases
+`$ nano ~/.bashrc`
+
+
+Paste the following aliases
+
+```powershell
+alias docker-stop='docker stop $(docker ps -a -q)'
+
+alias docker-psrm='docker rm $(docker ps -a -q)'
+
+alias docker-imgrm='docker rmi $(docker images -q)'
+
+alias docker-vlrm='docker volume rm $(docker volume ls -q)'
+
+alias docker-ntrm='docker network rm $(docker network ls -q)'
+```
+
+`Ctrl + X` + `Y` + `ENTER` to save the changes
+
+`$ source ~/.bashrc`
+
+Open a new terminal and enjoy!
