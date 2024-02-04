@@ -38,3 +38,65 @@ Distro with CNTLM
 ```powershell
 wsl --import UbuntuCNTLM . <archive.tar>
 ```
+
+## DOCKER INSTALATION
+Run the following commands in Ubuntu terminal
+
+Docker
+
+```powershell
+sudo apt update
+```
+```powershell
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
+
+```powershell
+sudo apt install build-essential
+```
+
+```powershell
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add
+```
+
+```powershell
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+```
+
+```powershell
+sudo apt update
+```
+
+```powershell
+sudo apt install docker-ce
+```
+
+```powershell
+sudo docker version
+```
+
+```powershell
+sudo groupadd docker
+```
+
+```powershell
+sudo usermod -aG docker $USER
+```
+
+Docker compose
+
+```powershell
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```powershell
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+```powershell
+docker-compose --version
+```
+
+Restart your PC
+
+Finished, now just enjoy!!
